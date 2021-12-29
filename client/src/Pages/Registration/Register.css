@@ -1,0 +1,108 @@
+body{
+    background-color: #ddecf3 !important;
+}
+.container-lgn{
+    display: block;
+   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 26%;
+  height: 530px;
+  
+  background-color: white;
+  border-radius: 25px;
+
+  /* background-color: rgb(38,78,142); */
+  /* background-color: #3194d7; */
+
+}
+.ipt{
+    border: none;
+    border-bottom: 1px solid #3194d7;
+    width: 85%;
+    padding-left: 10px;
+    font-size: 20px;
+    align-items: center;
+    cursor: text;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .iptpassword{
+    border: none;
+    border-bottom: 1px solid #3194d7;
+    width: 85%;
+    padding-left: 10px;
+    font-size: 20px;
+    align-items: center;
+    cursor: text;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ipt:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.iptpassword:focus, textarea:focus, select:focus{
+    outline: none;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+
+    font-size: 35px;
+}
+.rgistraionbutton{
+    width: 85%;
+    height: 40px;
+    background-color: #20abba;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.rgistraionbutton:hover{
+color: blanchedalmond;
+}
+.txt{
+    margin-left: 20px;
+    font-size: larger;
+}
+
+/* .logn{
+    display: flex;
+} */
+/* .txt{
+    margin-left: 20px;
+    margin-top: 20px;
+} */
+/* button{
+    width: 40%;
+    border-radius: 20px;
+} */
+.buttonregister{
+    width: 100%;
+}
+h5{
+    margin-top: 40px;
+}
+.form-control {
+    width: 85%;
+    border-radius: 20px;
+  
+}
+.panel-body{
+    margin-left: 40px;
+}
+.btn-lgn{
+    border-radius: 20px;
+    background-color:#124d8d; 
+    color: white;
+    width: 100%;
+}
+
+a{
+    color: white; 
+}

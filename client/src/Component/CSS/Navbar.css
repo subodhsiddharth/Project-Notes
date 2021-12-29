@@ -1,0 +1,28 @@
+.leftmenu{
+    margin-left: 100px;
+    font-size: medium;
+   font-weight: normal;
+}
+.btnregister{
+    border-radius: 20px;
+    margin-left: 10px;
+   width: 90px;
+   font-size: larger;
+   font-weight: normal;
+   background-color: #0e1a3c;
+   color: white;
+   height: 40px;
+   width: 100px;
+
+    
+}
+.menu{
+    box-shadow: 0 3px 5px -3px #000;
+    background-color: white;
+}
+.menuright{
+    margin-right: 180px;
+}
+.icon{
+    height: 50px;
+}
