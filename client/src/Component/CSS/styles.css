@@ -1,0 +1,74 @@
+
+  
+  .rdt_Table {
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    outline: none;
+ 
+  }
+  .rdt_TableRow {
+    background-color: grey;
+  }
+  .rdt_TableCol {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+  }
+  
+  .rdt_TableHeader {
+    background-color: transparent;
+  }
+  
+  
+  .rdt_TableHeadRow {
+    background-color: green;
+  }
+  
+  
+  .sc-bkkeKt{
+ display: flex !important;
+ width: 100% !important;
+   
+  }
+  .sc-fFeiMQ {
+     /* width: 40% !important; */
+    display: flex !important;
+font-size: 30px !important;
+
+  font-weight: 900 !important;
+    margin-top: 25px ;
+    margin-bottom: -45px;
+  }
+  .sc-dJjYzT {
+    /* width: 40% !important; */
+    float: right  !important;
+    margin-bottom: 10px  !important;
+    padding-bottom: 10px !important;
+    margin-top: -10px;
+  }
+
+  
+
+  .gJVjWL {
+    display: flex !important;
+  }
+
+  /* .hkMDrI {
+    position: relative;
+    width: 100%;
+  
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 0;
+    border: 3px solid #FAFAFA;
+  } */
+
+.bWTWQu {
+  margin: 0 4px;
+  font-size: revert !important;
+}
+.fuBVgf :hover{
+  color: rgb(47, 47, 235) !important;
+}
+
