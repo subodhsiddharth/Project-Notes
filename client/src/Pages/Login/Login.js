@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Login/Login.css';
+import loginpic from "../../Image/Group60.png"
 import Navbar from "../../Component/Navbar"
 import Field from '../../Component/Field'
 import Button from '../../Component/Button';
@@ -59,28 +60,34 @@ export default function Login() {
 
 
     return (
-        <>
-            {/* <Navbar/> */}
-            <form >
-                <div className="container-lgn" >
+        <div id="login" style={{display:"flex"}} >
+        {/* <Navbar/> */}
+       <div className="container-lgn" >
+       <form  >
+            <div >
 
-                    <h1>Login</h1>
-                    <div class="panel-body mt-4">
-                        <Field type="email" className=" form-label ipt " label="Email" placeholder="Your Email" onChange={onchangeemailhandler} />
-                        <Field type="password" className="form-label iptpassword" label="Password" placeholder="Enter Password" onChange={onchangepasswordhandler} />
+                <h1>Login</h1>
+                <div class="panel-body mt-4">
+                    <Field type="email" className=" form-label ipt " label="Email" placeholder="Your Email" onChange={onchangeemailhandler} />
+                    <Field type="password" className="form-label iptpassword" label="Password" placeholder="Enter Password" onChange={onchangepasswordhandler} />
 
-                        {/* <button class="btn btn-lgn " type="submit" href="/Activequiz" onchange={submitHandler}   >Login</button> */}
-                        <button type='button' className="btn loginbutton" onClick={submithandler} >Login</button>
+                    {/* <button class="btn btn-lgn " type="submit" href="/Activequiz" onchange={submitHandler}   >Login</button> */}
+                    <button type='button' className="btn loginbutton" onClick={submithandler} >Login</button>
 
-                        {/* <Button className="btn loginbutton" text="Login" type="submit" onClick={apiGet}   /> */}
-                        <a href="/register" className="txt"> Click for Register </a>
-
-                    </div>
-                    {/* <div>{message}</div> */}
+                    {/* <Button className="btn loginbutton" text="Login" type="submit" onClick={apiGet}   /> */}
+                    <a href="/register" className="txt"> Click for Register </a>
 
                 </div>
-            </form>
+                {/* <div>{message}</div> */}
 
-        </>
+            </div>
+        </form>
+       </div>
+
+       <div style={{color:"white"}}>
+<img src={loginpic} alt='' style={{height:"540px" , width:"640px", marginTop:"80px" , marginLeft:"130px"}} />
+       </div>
+
+    </div>
     )
 }

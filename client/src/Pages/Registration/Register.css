@@ -1,16 +1,23 @@
-body{
-    background-color: #ddecf3 !important;
+body #reg{
+    background-color: #030C5B !important;
+    height: 684px;
+    overflow-y: hidden;
+    overflow: hidden;
+    font-family: "Segoe UI";
 }
 .container-lgn{
     display: block;
    margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 26%;
-  height: 530px;
+   margin-left: 200px;
+  /* margin-left: auto;
+  margin-right: auto;*/
+   width: 25%; 
+
   
   background-color: white;
-  border-radius: 25px;
+  border-radius: 10px;
+  height: 520px;
+
 
   /* background-color: rgb(38,78,142); */
   /* background-color: #3194d7; */
@@ -35,8 +42,8 @@ body{
     font-size: 20px;
     align-items: center;
     cursor: text;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
   .ipt:focus, textarea:focus, select:focus{
     outline: none;
@@ -46,25 +53,30 @@ body{
 }
 h1{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+    font-weight: bold
 
-    font-size: 35px;
 }
 .rgistraionbutton{
     width: 85%;
     height: 40px;
-    background-color: #20abba;
+    background-color: #2699FB;
     color: white;
     font-size: 20px;
     border-radius: 30px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     letter-spacing: 1px;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 .rgistraionbutton:hover{
-color: blanchedalmond;
+color: white;
+background-color: #070C5B;
 }
 .txt{
     margin-left: 20px;

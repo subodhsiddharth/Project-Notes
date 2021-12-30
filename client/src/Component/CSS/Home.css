@@ -1,7 +1,7 @@
 .heading{
     text-align: center;
     
-  background-color: #F7F9FA;
+
 }
 .main-div{
     width: 100%;
@@ -9,22 +9,24 @@
   position: fixed;
   overflow-x: hidden;
   
-  background-color: #F7F9FA;
+  
   padding-left: 20px;
 
-  border-top: 1px solid cadetblue ;
   text-align: justify;
 }
 .question{
     float: left;
     width: 45%;
-   border-right: 1px solid cadetblue;
+    border: 1px solid cadetblue;
    height: auto;
    padding-right: 20px;
    padding-top: 10px;
    padding-bottom: 20px;
    overflow-y: auto;
-   height: 600px;
+   height: 550px;
+   padding-left: 30px;
+   border-radius: 10px;
+   box-shadow: 2px 2px #88888879;
 
  
 
@@ -35,6 +37,8 @@
     margin-right: 60px;
   border: 1px solid cadetblue;
     padding-top: 10px;
-    
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #88888879;
 }
 

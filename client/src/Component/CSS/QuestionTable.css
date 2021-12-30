@@ -1,8 +1,15 @@
+body #tt{
+  background-color: white;
+}
+
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
   border: 1px solid #ddd;
+  margin-left: 90px;
+  
   
 }
 th{
@@ -27,3 +34,12 @@ td:hover {
 tr:nth-child(even) {
   background-color: #dfe6f5;
 }
+
+.questionlist{
+  margin-Left:"100px";
+   margin-Top:"80px";
+    margin-Bottom:"40px";
+    font-size:"31px"
+}
+
+

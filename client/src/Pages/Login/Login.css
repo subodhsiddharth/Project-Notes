@@ -1,16 +1,23 @@
-body{
-    background-color: #ddecf3 !important;
+body #login{
+    background-color: #030C5B !important;
+    height: 684px;
+    overflow-y: hidden;
+    overflow: hidden;
+    font-family: "Segoe UI";
+    
 }
 .container-lgn{
     display: block;
    margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 26%;
-  height: 530px;
+   margin-left: 200px;
+  /* margin-left: auto;
+  margin-right: auto;*/
+   width: 25%; 
+
   
   background-color: white;
-  border-radius: 25px;
+  border-radius: 10px;
+  height: 520px;
 
   /* background-color: rgb(38,78,142); */
   /* background-color: #3194d7; */
@@ -45,26 +52,30 @@ body{
     outline: none;
 }
 h1{
+    
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
     color: white;
-
-    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 25px;
+    font-weight: bold !important
 }
 .loginbutton{
     width: 85%;
     height: 40px;
-    background-color: #20abba;
+    background-color: #2699FB;
     color: white;
     font-size: 20px;
     border-radius: 30px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     letter-spacing: 1px;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 .loginbutton:hover{
-    color: blanchedalmond;
+    color: white;
+background-color: #070C5B;
 }
 
 .txt{
@@ -83,7 +94,7 @@ h1{
     width: 40%;
     border-radius: 20px;
 } */
-.buttonregister{
+/* .buttonregister{
     width: 100%;
 }
 h5{
@@ -106,4 +117,4 @@ h5{
 
 a{
     color: white; 
-}
+} */

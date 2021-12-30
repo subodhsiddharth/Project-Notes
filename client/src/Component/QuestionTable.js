@@ -35,12 +35,36 @@ useEffect (()=>{
     // <div className="App" style={{marginLeft:"100px", marginRight:"100px", backgroundColor:"white"}} >
     
       /* <a href={<DrpDwnSection/>}><Table data={data}  /> </a> */
-      <>
-{/* 
-<Link to='/Answers'><Table data={data}  /> </Link> */}
+      <div id='tt'>
+<div className='parrent' >
 
-<div id='tt' style={{width:"70%", marginLeft:"250px", opacity:".8", marginTop:"80px" ,borderRadius:"10px" }}>
-<ReactBootstrap.Table striped bordered hover>
+<div style={{display:"flex" , alignItems:"center"}}>
+<div style={{marginLeft:"100px", marginTop:"80px", marginBottom:"40px"}}>
+ <h3 style={{fontSize:"25px", color:"#030c5b"}}>List Of Questions</h3>
+ 
+ <hr style={{height:"2px", borderWidth:"0px", color:"#030c5b" , backgroundColor:"#030c5b" ,marginLeft:"40px", marginRight:"40px"}}/>
+</div>
+<div className='searchfilter' style={{marginLeft:"800px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500"}}>
+<option value="0">Difficulty</option>
+  <option value="Easy">Easy</option>
+  <option value="Medium">Medium</option>
+  <option value="Hard">Hard</option>
+ 
+</select>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+<div >
+
+<table striped bordered hover>
   <thead>
     <tr>
 <th></th>
@@ -63,9 +87,9 @@ useEffect (()=>{
    
    
   </tbody>
-</ReactBootstrap.Table>
+</table>
 </div>
-    </>
+    </div>
   );
 }
 
