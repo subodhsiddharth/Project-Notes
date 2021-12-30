@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 50%;
+  font-size: 45%;
 }
 
 body {
@@ -50,7 +50,7 @@ a {
 .header__subtitle {
   font-size: 1.6rem;
   font-weight: 100;
-  margin-top: 10px;
+  
 }
 
 /* Actions Bar */
