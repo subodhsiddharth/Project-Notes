@@ -1,10 +1,12 @@
 // import React from 'react'
-import 'antd/dist/antd.css';
-import './CSS/QuestionTable.css'
+
 
 
 import React ,{useState, useEffect} from 'react'
 import axios from 'axios';
+import 'antd/dist/antd.css';
+import './CSS/QuestionTable.css';
+import CardData from './Card';
 import ReactDOM from "react-dom";
 import data from "./data";
 import Table from "./DataTable";
@@ -35,12 +37,56 @@ useEffect (()=>{
     // <div className="App" style={{marginLeft:"100px", marginRight:"100px", backgroundColor:"white"}} >
     
       /* <a href={<DrpDwnSection/>}><Table data={data}  /> </a> */
-      <>
-{/* 
-<Link to='/Answers'><Table data={data}  /> </Link> */}
+      <div id='tt'>
+        <CardData/>
+<div className='parrent' >
 
-<div id='tt' style={{width:"70%", marginLeft:"250px", opacity:".8", marginTop:"80px" ,borderRadius:"10px" }}>
-<ReactBootstrap.Table striped bordered hover>
+<div style={{display:"flex" , alignItems:"center"}}>
+<div style={{marginLeft:"180px", marginTop:"80px", marginBottom:"20px"}}>
+ <h3 style={{fontSize:"25px", color:"#030c5b"}}>List Of Questions</h3>
+ 
+ <hr style={{height:"2px", borderWidth:"0px", color:"#030c5b" , backgroundColor:"#030c5b" ,marginLeft:"40px", marginRight:"40px"}}/>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500",height:"30px"}}>
+<option value="0">List</option>
+  {/* <option value="Easy">Easy</option>
+  <option value="Medium">Medium</option>
+  <option value="Hard">Hard</option> */}
+ 
+</select>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500", height:"30px"}}>
+<option value="0">Status</option>
+  <option value="Easy">To Do</option>
+  <option value="Medium">Sallved</option>
+  <option value="Hard">Attempted</option>
+ 
+</select>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500" ,height:"30px"}}>
+<option value="0">Difficulty</option>
+  <option value="Easy">Easy</option>
+  <option value="Medium">Medium</option>
+  <option value="Hard">Hard</option>
+ 
+</select>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<div >
+
+<table striped bordered hover>
   <thead>
     <tr>
 <th></th>
@@ -63,9 +109,9 @@ useEffect (()=>{
    
    
   </tbody>
-</ReactBootstrap.Table>
+</table>
 </div>
-    </>
+    </div>
   );
 }
 

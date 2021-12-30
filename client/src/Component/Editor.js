@@ -34,7 +34,7 @@ let code ="";
 export default function CodeCompiler(props) {
   return (
    <Editor
-   height="300px" 
+   height="270px" 
 
       lineNumbers="true"
          tabSize="2"

@@ -1,0 +1,48 @@
+.group-111 {
+    align-items: center;
+    background-color: 
+  #6daf4270;
+    border-radius: 42px;
+    display: flex;
+    height: 171px;
+    justify-content: flex-end;
+    min-width: 171px;
+    padding: 0 33px;
+    cursor: pointer;
+  }
+  .asset-2300x-8 {
+    height: 99px;
+    object-fit: cover;
+    width: 100px;
+  }
+  .group-114 {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-height: 221px;
+    position: relative;
+    transition: all 0.2s ease;
+    width: 171px;
+  }
+  .group-114:hover {
+    transform: scale(1.1);
+  }
+
+  .algorithms {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 1.0px;
+    margin-top: 29px;
+    min-height: 24px;
+    min-width: 108px;
+    white-space: nowrap;
+  }
+  
+  @font-face {
+    font-family: "Arial-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://fonts.animaapp.com/Arial-Bold") format("truetype");
+  }
