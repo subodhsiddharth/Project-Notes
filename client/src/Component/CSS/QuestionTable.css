@@ -6,11 +6,22 @@ body #tt{
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 90%;
+  width: 70%;
   border: 1px solid #ddd;
-  margin-left: 90px;
+  margin-left: 160px;
   
   
+}
+.group-86 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 52px;
+  left: 0;
+  min-width: 177px;
+  padding: 15.1px 12.9px;
+  position: absolute;
+  top: 0;
 }
 th{
   border-bottom: 1px solid #dddddd;
@@ -32,7 +43,7 @@ td:hover {
 }
 
 tr:nth-child(even) {
-  background-color: #dfe6f5;
+  background-color: #F2F3F4;
 }
 
 .questionlist{

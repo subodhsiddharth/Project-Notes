@@ -42,13 +42,31 @@ useEffect (()=>{
 <div className='parrent' >
 
 <div style={{display:"flex" , alignItems:"center"}}>
-<div style={{marginLeft:"100px", marginTop:"80px", marginBottom:"40px"}}>
+<div style={{marginLeft:"180px", marginTop:"80px", marginBottom:"20px"}}>
  <h3 style={{fontSize:"25px", color:"#030c5b"}}>List Of Questions</h3>
  
  <hr style={{height:"2px", borderWidth:"0px", color:"#030c5b" , backgroundColor:"#030c5b" ,marginLeft:"40px", marginRight:"40px"}}/>
 </div>
-<div className='searchfilter' style={{marginLeft:"800px", marginTop:"80px", marginBottom:"40px"}}>
-<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500"}}>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500",height:"30px"}}>
+<option value="0">List</option>
+  {/* <option value="Easy">Easy</option>
+  <option value="Medium">Medium</option>
+  <option value="Hard">Hard</option> */}
+ 
+</select>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500", height:"30px"}}>
+<option value="0">Status</option>
+  <option value="Easy">To Do</option>
+  <option value="Medium">Sallved</option>
+  <option value="Hard">Attempted</option>
+ 
+</select>
+</div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
+<select  style={{backgroundColor:"#F2F3F4" , width:"130px" ,border:"none" , fontSize:"18px", fontWeight:"500" ,height:"30px"}}>
 <option value="0">Difficulty</option>
   <option value="Easy">Easy</option>
   <option value="Medium">Medium</option>
@@ -56,8 +74,9 @@ useEffect (()=>{
  
 </select>
 </div>
+<div className='searchfilter' style={{marginLeft:"60px", marginTop:"80px", marginBottom:"40px"}}>
 
-
+</div>
 
 </div>
 
