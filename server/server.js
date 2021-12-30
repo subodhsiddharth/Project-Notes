@@ -22,6 +22,7 @@ var submitRouter = require("./routes/submitRouter");
 var questionRouter = require("./routes/questionRouter");
 var compileRouter = require("./routes/compileRouter");
 var profileRouter = require("./routes/profileRouter");
+var reportRouter = require("./routes/reportRouter");
 
 var app = express();
 
@@ -45,6 +46,7 @@ app.use('/questions', questionRouter);
 app.use('/submit', submitRouter);
 app.use('/compile', compileRouter);
 app.use('/myprofile', profileRouter);
+app.use('/myreport', reportRouter);
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
