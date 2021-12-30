@@ -1,10 +1,12 @@
 // import React from 'react'
-import 'antd/dist/antd.css';
-import './CSS/QuestionTable.css'
+
 
 
 import React ,{useState, useEffect} from 'react'
 import axios from 'axios';
+import 'antd/dist/antd.css';
+import './CSS/QuestionTable.css';
+import CardData from './Card';
 import ReactDOM from "react-dom";
 import data from "./data";
 import Table from "./DataTable";
@@ -36,6 +38,7 @@ useEffect (()=>{
     
       /* <a href={<DrpDwnSection/>}><Table data={data}  /> </a> */
       <div id='tt'>
+        <CardData/>
 <div className='parrent' >
 
 <div style={{display:"flex" , alignItems:"center"}}>
