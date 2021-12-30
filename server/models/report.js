@@ -3,29 +3,36 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const reportSchema = new Schema({
-    qid: {
-        type: Number,
-        required: true,
-        unique: true
+    user:  {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
-    qtitle: {
-        type: String,
-        required: true
+    question: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Question'
     },
     status: {
         type: String,
         enum: ["Solved", "Partially Solved", "Unsolved"],
         required: true
     },
-    sampleOutput: {
-        type: Array,
+    language: {
+        type: String,
         required: true
     },
-    difficulty: {
+    compileTime: {
         type: String,
-        enum: ['Easy', 'Medium', 'Hard'],
+        required: true
+    },
+    timeSpent: {
+        type: String,
+        default:''
+    },
+    testcasePassed: {
+        type: String,
         required: true
     }
+    
 },{
     writeConcern: {
        w: 'majority',
@@ -36,6 +43,6 @@ const reportSchema = new Schema({
     timestamps: true
 })
 
-var  CompileQuestions = mongoose.model('Question', questionCompilerSchema);
+var  UserReport = mongoose.model('Report', reportSchema);
 
-module.exports = CompileQuestions;
+module.exports =  UserReport;
