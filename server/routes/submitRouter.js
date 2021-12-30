@@ -6,7 +6,7 @@ const Questions = require('../models/question');
 const submitRouter = express.Router();
 
 var authenticate = require('../authenticate');
-const findques = require('../Controller/Findquesbyid');
+//const findques = require('../Controller/Findquesbyid');
 submitRouter.use(express.json());
 
 
@@ -74,41 +74,7 @@ submitRouter.post("/", authenticate.verifyUser, (req, res) => {
             }
           }
           body.output = `${count} out of ${output.length} test cases passed` 
-          // if(output == correctOutput){
-          //   body.output = "All test cases passed";
-          //   //console.log( body.output);
-          //   console.log("All test cases passed");
-          //   return res.json(body);
-            
-          // }
-          // else{
-          //   console.log("Try again as hidden test casses are not passed");
-          //   //testJson.Fail = "Try again as hidden test casses are not passed";
-          //   body.output = "Try again as hidden test casses are not passed";
-          // }
-                    
-          //testJson.Fail = "Try again as hidden test casses are not passed";
-          //JSON.stringify(testJson.Fail);
-          //let testCases = 0;
-        //   let outputString = body.output;
-        //   outputString = outputString.substring(0, outputString.length - 1);
-        // //res.json(body);
-        // for(let i = 0; i < testOutput.length; i++){
-
-        //    if(outputString === testOutput[i]){
-        //         console.log("Output match the input")
-        //         count++;
-        //         testArray[`Test Cases ${count}`] = 'Passed';
-        //   }
-        //   else{
-        //         console.log("Output input does n't match");
-        //         count++;
-        //         testArray[`Test Cases ${count}`] = 'Failed';                      
-        //   }
-        // }
-        //  console.log(testArray);
-        //  let jsonObj = JSON.stringify(testArray); 
-        //  console.log(jsonObj);
+          
          res.json(body);
         } 
       );
