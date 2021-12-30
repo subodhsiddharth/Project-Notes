@@ -110,7 +110,7 @@ function handleChange(e){
   console.log(v);
 }
 
-async function apiSubmit(){
+async function apiSubmit(props){
     
   const response = await fetch("http://127.0.0.1:8080/submit", {
     method: "POST",
@@ -122,6 +122,8 @@ async function apiSubmit(){
       code: code,
       language: selectedvalue,
       standardIn: inp
+      // qid:props.quesid
+
     })
   // }) .then(response => {
   //   const c = (response.json())

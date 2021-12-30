@@ -6,18 +6,25 @@ import Heading from '../../Component/Heading';
 import AllQusetion from "../Allquestion/Allquestion"
 import "../../Component/CSS/Home.css";
 import { Link } from 'react-router-dom';
+
 export default function Answers(props) {
   console.log(props);
   let report;
-    const[quesdesc, setquesdesc]= useState()
+    const[quesdesc, setquesdesc]= useState();
+    const[quesid,setquesid]=useState();
+    let url= 'http://localhost:8080/submit/'+props.match.params.id;
+
+
     useEffect (()=>{
         const fetchPostList = async () =>{
-          const { data } =await axios("http://localhost:8080/questions" )
+          console.log("API HIT 1")
+          const { data } =await axios(url)
           report = data;
+          console.log("API HIT 2");
           console.log(report);
-          setquesdesc(data[props.match.params.id].description)
+          setquesdesc(data.description)
           
-          console.log(data[props.match.params.id].description)
+          console.log(data.description)
 
         }
 
@@ -35,7 +42,7 @@ export default function Answers(props) {
 </div>
 
 <div className='compiler'   >
-<DrpDwnSection />
+<DrpDwnSection quesid={quesid}/>
 </div>
     
 <h3>{report}</h3>

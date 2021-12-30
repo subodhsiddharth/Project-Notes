@@ -6,8 +6,9 @@ const Questions = require('../models/question');
 const submitRouter = express.Router();
 
 var authenticate = require('../authenticate');
-
+const findques = require('../Controller/Findquesbyid');
 submitRouter.use(express.json());
+
 
 let testInput = "";
 let testOutput = [];
@@ -30,11 +31,19 @@ submitRouter.post("/", authenticate.verifyUser, (req, res) => {
       console.log(bodyObj);
       let code = bodyObj.code.toString();
       let language = bodyObj.language.toString();
+      // let qid=bodyObj.qid.toString();
+      // console.log(qid);
       
       let correctOutput = testOutput//"57";//'120 \n5040 \n';
     
+      console.log(correctOutput);
+
+
+      console.log("line 40 running");
       let inputs = testInput;//"2 \n 5 \n 7";//bodyObj.standardIn.toString();
+
       console.log(inputs);
+      console.log("line 40 end");
       var program = {
         script: code,
         language: language,
@@ -57,6 +66,8 @@ submitRouter.post("/", authenticate.verifyUser, (req, res) => {
           let count = 0;
           let output = body.output.match(/\d+/g);
           console.log(output);
+
+
           for(let i =0; i<output.length; i++){
             if(output[i] == correctOutput[i]){
                 count += 1;
@@ -103,6 +114,10 @@ submitRouter.post("/", authenticate.verifyUser, (req, res) => {
       );
     });
 }); 
+
+
+
+// submitRouter.get('/:quesId',findques.find);
 
 submitRouter.route('/:quesId')
 .get((req,res,next) => {

@@ -54,7 +54,7 @@ useEffect (()=>{
     posts.blogs && posts.blogs.map((item, index)=>(
 <tr key={item._id}>
 <td>{item.id}</td>
-      <Link to={'/Question/'+index}><td>{item.title}</td></Link>
+      <Link to={'/Question/'+item._id}><td>{item.title}</td></Link>
       <td>{item.difficulty}</td>
       
 </tr>
