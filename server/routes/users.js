@@ -7,9 +7,7 @@ var userRouter = express.Router();
 var passport = require('passport');
 
 var authenticate = require('../authenticate');
-
-//let getToken = '';
-
+var jwt = require('jsonwebtoken');
 userRouter.use(express.json());
 
 /* GET users listing. */
@@ -46,8 +44,6 @@ userRouter.post('/signup', (req, res, next) => {
 userRouter.post('/login', passport.authenticate('local'), (req, res) => {
 
   var token = authenticate.getToken({_id: req.user._id});
-  //getToken = token;
-  //console.log(getToken);
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
   res.json({success: true, token: token, status: 'You are successfully logged in!'});
@@ -67,5 +63,17 @@ userRouter.get('/logout', (req, res) => {
 });
 
 
-exports.userRouter = userRouter;
-//exports.getToken = getToken;
+userRouter.put('/edit/:userId', authenticate.verifyUser, (req, res, next) => {
+  Users.findByIdAndUpdate(req.params.userId, {
+      $set: req.body
+  }, { new: true })
+  .then((user) => {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      res.json(user);
+  }, (err) => next(err))
+  .catch((err) => next(err));
+})
+
+
+module.exports = userRouter;

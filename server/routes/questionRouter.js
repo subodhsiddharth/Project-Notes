@@ -48,10 +48,6 @@ questionRouter.route('/:quesId')
     .then((ques) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        module.exports.testInput = ques.sampleInput;
-        //console.log(testInput);
-        module.exports.testOutput = ques.sampleOutput;
-        //console.log(testOutput);
         res.json(ques);
     }, (err) => next(err))
     .catch((err) => next(err));
