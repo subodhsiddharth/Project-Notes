@@ -1,0 +1,315 @@
+/* body{
+    overflow: hidden;
+} */
+.group-118 {
+    background-color: 
+  #fbfbfb1a;
+    border-radius: 17px;
+    box-shadow: 2px 2px 2px 
+  #00000042;
+
+    height: 752px;
+    width: 240px;
+  }
+
+.rectangle-32 {
+    background-color: #030c5b;
+    border-radius: 17px;
+    box-shadow: 0px 3px 6px 
+  #00000029;
+    flex: 1;
+    height: 160px;
+    margin-top: 1px;
+    opacity: 0.1;
+    width: 240px;
+  }
+  .user {
+    align-items: flex-start;
+   display: flex;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    height: 86px;
+    margin-top: 0;
+    min-width: 86px;
+    padding: 20.8px 20.8px;
+    
+  }
+
+  .union-7 {
+    height: 43px;
+    object-fit: cover;
+    width: 43px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+  }
+  .title {
+    letter-spacing: 0;
+    
+    white-space: nowrap;
+    color: green;
+    
+  }
+  
+  @font-face {
+    font-family: "SegoeUI-Semibold";
+    font-style: normal;
+    font-weight: 900;
+    font-size: larger;
+    
+    src: url("https://fonts.animaapp.com/SegoeUI-Semibold") format("truetype");
+  }
+
+  .practice{
+    display:"flex" ;
+     margin-Left:"60px";
+      margin-Top:"20px" 
+  }
+    .group-121 {
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: 0px 3px 6px 
+  #00000029;
+    display: flex;
+    height: 280px;
+    justify-content: flex-end;
+    min-width: 500px;
+    padding-top: 25.2px ;
+   padding-right: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+
+  }
+
+  .group-122 {
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: 0px 3px 6px 
+  #00000029;
+
+    height:280px;
+    justify-content: flex-end;
+    min-width: 700px;
+    padding-top: 25.2px ;
+   padding-right: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+  .group-123 {
+   
+    background-color: white;
+   
+
+    height:280px;
+   min-width: 100px;
+   
+    /* padding-top: 25.2px ; */
+   /* padding-right: 15px; */
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+  
+  .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    width: 246px;
+    padding-left: 10px;
+  }
+  
+  .problem-solved {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    color: 
+  #7b7070;
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xxl2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    min-height: 24px;
+    
+    white-space: nowrap;
+  }
+  
+  .number {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-left: 17px;
+    margin-top: 7px;
+    min-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .flex-row {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    height: 18px;
+    margin-right: 3.0px;
+    margin-top: 71px;
+    min-width: 237px;
+  }
+  
+  .easy {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    color: 
+  #126000;
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 14px;
+    min-height: 18px;
+    min-width: 33px;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+  
+  .medium {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    color: 
+  #fc7e00;
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-left: 61px;
+    min-height: 18px;
+    min-width: 52px;
+    white-space: nowrap;
+  }
+  
+  .place {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    color: var(--red);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-left: 59px;
+    min-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .text-container {
+    align-items: flex-start;
+    display: flex;
+    height: 22px;
+    margin-left: 3.5px;
+    margin-top: 8px;
+    min-width: 242px;
+  }
+  
+  .text-1 {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 18px;
+    min-height: 22px;
+    min-width: 37px;
+    white-space: nowrap;
+  }
+  
+  .text-2 {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-left: 30px;
+    min-height: 22px;
+    margin-left: 100px;
+    margin-top: -20px;
+    white-space: nowrap;
+  }
+  
+  .text-3 {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 18px;
+    
+    min-height: 22px;
+    margin-left: 210px;
+    margin-top: -20px;
+    white-space: nowrap;
+  }
+  
+  .overlap-group {
+    align-items: flex-end;
+    background-color: var(--white);
+    border-radius: 88px;
+    display: flex;
+    height: 176px;
+    justify-content: flex-end;
+    margin-left: 78px;
+    margin-top: 9.83px;
+    min-width: 176px;
+    padding: 57.5px 21px;
+  }
+  
+  .title {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    letter-spacing: 0;
+    line-height: 25px;
+    min-height: 59px;
+    min-width: 132px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  @font-face {
+    font-family: "Arial-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/Arial-Regular") format("truetype");
+  }
+  .group-124 {
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+    justify-content: space-between;
+    width: 52px;
+  }
+  
+  .medium {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    color: 
+  #fc7e00;
+    flex: 1;
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs);
+    font-weight: 400;
+    height: 18px;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-right: -2px;
+    margin-top: 1px;
+    max-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .text-1 {
+    -webkit-text-stroke: 0.05px var(--dove-gray);
+    height: 22px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-bottom: -3px;
+    margin-left: 7px;
+    white-space: nowrap;
+    /* width: 37px; */
+  }
+  
+  @font-face {
+    font-family: "Arial-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/Arial-Regular") format("truetype");
+  }
+
+  

@@ -1,12 +1,41 @@
 import React from 'react'
-import Button from './Button'
+import { Popover} from 'antd';
 import {Link} from 'react-router-dom'
 import '../Component/CSS/Navbar.css'
 import logo from "../Image/logo.png";
+import {FaUser, FaUserCircle} from "react-icons/fa"
+import { FiLogOut } from 'react-icons/fi';
+const content = (
+  <div>
+{/* <ul>
+<li>
+    <FaUser/>
+    <Link to="/Editprofile">My Profile</Link>
+        </li>
+   
+    <li>
+    <FiLogOut/>
+<Link to="/login">Logout</Link>
+    </li>
+</ul> */}
+<div style={{display:"flex" }}>
+    <div><FaUser/></div>
+    <div style={{marginLeft:"5px"}}> <Link to="/Editprofile">My Profile</Link></div>
+</div>
+<div style={{display:"flex" }}>
+    <div>    <FiLogOut/></div>
+    <div style={{marginLeft:"5px"}}><Link to="/login">Logout</Link></div>
+</div>
+  </div>
+);
 
-export default function Navbar() {
-  return (
-    <div>
+
+// import Button from './Button'
+
+function SecondNavbar() {
+    return (
+        <div>
+             <div>
       <nav class="navbar navbar-expand-lg  menu">
         <div class="container-fluid leftmenu">
           <a class="navbar-brand" href="/">
@@ -35,12 +64,21 @@ export default function Navbar() {
             </ul>
             <ul class="nav menuright">
               {/* <Button className="btn btn-outline-primary me-2 btnregister" text="Register" href="/register" /> */}
-              <Button className="btn btn-outline-primary btnregister" text="Login" href="login" />
+{/*               
+              <Button className="btn btn-outline-primary btnregister" text="Logout" href="login" /> */}
+                <Popover content={content}  trigger="hover">
+                <FaUserCircle style={{fontSize:"40px " , width:"50px"}}/>
+    </Popover>
+   
+
             </ul>
           </div>
         </div>
     </nav>
     
   </div>
-  )
+        </div>
+    )
 }
+
+export default SecondNavbar
