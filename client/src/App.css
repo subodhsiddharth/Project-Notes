@@ -1,10 +1,10 @@
 /* Base Styles */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 html {
   font-size: 45%;
@@ -16,6 +16,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   margin: 10px;
+  
 }
 
 button {
@@ -92,16 +93,17 @@ a {
 
 
 .buttonsubmit{
-  background: #acacac;
+  background-color: #2cafa5;
   margin-left: 30px;
-
+width: 100px;
   border: none;
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 600;
   padding: 0.5rem;
   transition: background 0.3s ease;
+  color: white;
 }
 
 .buttonsubmit:hover {
@@ -138,12 +140,13 @@ a {
   padding: 0.8rem;
   border-color: solid royalblue;
   border-radius: 5px;
+  outline: none;
 }
 
 .title-input:focus {
   resize: none;
   border-radius: 5px;
-  outline: darkslategray;
+  outline: none;
 }
 
 .fakeScreen {
