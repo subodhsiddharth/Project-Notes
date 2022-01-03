@@ -38,7 +38,7 @@ export default function Login() {
             res => {
                 setloginstatus(res.status);
                 console.log(res.status)
-                const { token } = res.data;
+                let { token } = res.data;
                 localStorage.setItem('token', token);
             }
         ).catch(error => {

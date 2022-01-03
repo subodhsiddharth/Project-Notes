@@ -16,7 +16,7 @@ const reportSchema = new Schema({
         enum: ["Solved", "Partially Solved", "Unsolved"],
         required: true
     },
-    language: {
+    languageUsed: {
         type: String,
         required: true
     },
@@ -33,7 +33,7 @@ const reportSchema = new Schema({
         required: true
     }
     
-},{
+}, {
     writeConcern: {
        w: 'majority',
        j: true,

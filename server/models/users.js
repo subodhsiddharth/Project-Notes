@@ -1,3 +1,4 @@
+const { timeStamp } = require('console');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var passportLocalMongoose = require('passport-local-mongoose');
@@ -20,7 +21,9 @@ var userSchema = new Schema({
        j: true,
        wtimeout: 1000
     }
- });
+ }, {
+    timestamps: true
+});
 
 userSchema.plugin(passportLocalMongoose);
 

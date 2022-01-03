@@ -17,7 +17,7 @@ connect.then((db) => {
 }, (err) => { console.log(err); });
 
 
-var users = require('./routes/users');
+var userRouter = require('./routes/users');
 var submitRouter = require("./routes/submitRouter");
 var questionRouter = require("./routes/questionRouter");
 var compileRouter = require("./routes/compileRouter");
@@ -40,7 +40,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(passport.initialize());
 
-app.use('/users', users.userRouter);
+app.use('/users', userRouter);
 app.use('/questions', questionRouter);
 
 app.use('/submit', submitRouter);

@@ -25,14 +25,15 @@ const questionCompilerSchema = new Schema({
         enum: ['Easy', 'Medium', 'Hard'],
         required: true
     }
-},{
+}, {
     writeConcern: {
        w: 'majority',
        j: true,
        wtimeout: 1000
     }
  },{
-    timestamps: true
+      timestamps: true
+    
 })
 
 var  CompileQuestions = mongoose.model('Question', questionCompilerSchema);
