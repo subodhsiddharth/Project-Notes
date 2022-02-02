@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//subodhsiddharth.me/NotesApp/static/css/main.e6c13ad2.css",
+    "main.js": "//subodhsiddharth.me/NotesApp/static/js/main.83909a8d.js",
+    "static/js/512.23325617.chunk.js": "//subodhsiddharth.me/NotesApp/static/js/512.23325617.chunk.js",
+    "index.html": "//subodhsiddharth.me/NotesApp/index.html",
+    "main.e6c13ad2.css.map": "//subodhsiddharth.me/NotesApp/static/css/main.e6c13ad2.css.map",
+    "main.83909a8d.js.map": "//subodhsiddharth.me/NotesApp/static/js/main.83909a8d.js.map",
+    "512.23325617.chunk.js.map": "//subodhsiddharth.me/NotesApp/static/js/512.23325617.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.83909a8d.js"
+  ]
+}
