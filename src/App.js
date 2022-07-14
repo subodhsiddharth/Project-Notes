@@ -1,6 +1,5 @@
 import React , {useState} from 'react';
 import UserList from "./list" ;
-// import './App.css';
 
 function App() {
   const [ list, setlist] = useState("");
